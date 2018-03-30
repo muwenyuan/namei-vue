@@ -1,23 +1,22 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <heade></heade>
+    <div class="banner">banner图</div>
+    <div class="listNave">列表搜索</div>
+    <div class="hotArea">热门地区</div>
+    <div class="roll">团</div>
+    <div class="footer">底部</div>
   </div>
 </template>
 
 <script>
+import header from './components/hrader/header.vue';
 export default {
-  name: 'App'
+  components:{
+    heade:header
+  }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
